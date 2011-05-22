@@ -1,0 +1,12 @@
+Current Action: <%= @person.current_action %>
+
+<br/>
+<% if @person.current_action.eql? "Idle" %>
+ <%= image_tag("idle.png") %>
+<% elsif @person.current_action.eql? "Sleeping" %>
+ <%= image_tag("sleeping.png") %>
+<% elsif @person.current_action.eql? "Waking up" %>
+ <%= image_tag("waking_up.png") %>
+<% elsif @person.current_action.include? "Eating" %>
+ <%= image_tag("eating.png") %>
+<% end %>

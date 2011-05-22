@@ -1,0 +1,14 @@
+
+<div>
+  Welcome to the town!
+  <br/>
+  <div id="time" >
+    <%= render :partial => 'clock' %>
+  </div>
+
+  Meet <%= @person.first_name %> <%= @person.family_name %>
+  <br/>
+  <div id="action">
+    <%= render :partial => 'action' %>
+  </div>
+</div>
